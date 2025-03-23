@@ -13,7 +13,7 @@ int main() {
     // O processo pai recebe o PID do processo filho
     // Ele serve para identificar de forma exclusiva um processo durante o tempo em que está ativo.
     pid_t pid1 = fork();
-    pid_t pid2 = fork();
+    pid_t pid2;
 
     // Verifica se houve erro ao criar o processo
     // Se fork() retornar -1, significa que houve um erro ao criar o processo
@@ -21,27 +21,37 @@ int main() {
         cerr << "Erro ao criar processo 1!" << endl;
         return 1; // Se houve erro, retorna 1 para indicar falha
     }
-
-    if(pid2 == -1){
-        cerr << "Erro ao criar processo 2!" << endl;
-        return 1; // Se houve erro, retorna 1 para indicar falha
-    }
-
+    
     // Bloco de código que será executado pelo processo filho
     // O código dentro do if(pid == 0) será executado pelo processo filho
     // A função sleep(5) simula uma tarefa que leva 5 segundos para ser concluída
     if(pid1 == 0){
-        cout << "Inicio do processo filho!" << endl;
-        sleep(5); // O processo filho simula um trabalho de 5 segundos
-        cout << "Fim do processo filho!" << endl;
+        cout << "Inicio do processo filho 1!" << endl;
+        sleep(3); // O processo filho simula um trabalho de 5 segundos
+        cout << "Fim do processo filho 1!" << endl;
         return 0; // Finaliza o processo filho de forma controlada
-    } else{
-        // O código dendo do else será executado pelo processo pai
-        // Ele chama wait(NULL), que faz o processo pai aguardar até que o processo filho termine
-        cout << "Processo pai esperando o término do filho..." << endl;
+    } else {
+        cout << "Processo pai esperando o término do filho 1" << endl;
         wait(NULL); // O processo pai espera o filho terminar
-        cout << "Processo pai terminou!" << endl;
-    }
+        pid2 = fork();     
+        
+        if(pid2 == -1){
+            cerr << "Erro ao criar processo 2!" << endl;
+            return 1; // Se houve erro, retorna 1 para indicar falha
+        }
 
+        if(pid2 == 0){
+            cout << "Inicio do processo filho 2!" << endl;
+            sleep(5); // O processo filho simula um trabalho de 5 segundos
+            cout << "Fim do processo filho 2!" << endl;
+            return 0; // Finaliza o processo filho de forma controlada
+        } else{
+            // O código dendo do else será executado pelo processo pai
+            // Ele chama wait(NULL), que faz o processo pai aguardar até que o processo filho termine
+            cout << "Processo pai esperando o término do filho 2" << endl;
+            wait(NULL); // O processo pai espera o filho terminar
+            cout << "Processo pai terminou!" << endl;
+        }
+    }
     return 0; // Finaliza o processo pai de forma controlada
 }
