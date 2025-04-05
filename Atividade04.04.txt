@@ -1,0 +1,135 @@
+Exercicio 1
+
+- FCFS
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |         7         | 0  |  7  |
+P2       |        2         |         4         | 5  |  9  |
+P3       |        4         |         1         | 7  |  8  |
+P4       |        6         |         3         | 6  |  9  |
+
+- SJF
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |         7         | 8  |  15 |
+P2       |        2         |         4         | 4  |  8  |
+P3       |        4         |         1         | 0  |  1  |
+P4       |        6         |         3         | 0  |  3  |
+
+- SRTN
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |         7         | 8  | 15  |
+P2       |        2         |         4         | 1  |  5  |
+P3       |        4         |         1         | 0  |  1  |
+P4       |        6         |         3         | 1  |  4  |
+
+- RR
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |         7         | 8  |  15 |
+P2       |        2         |         4         | 8  |  12 |
+P3       |        4         |         1         | 5  |  6  |
+P4       |        6         |         3         | 4  |  7  |
+
+Exercicio 2
+
+- FCFS
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        1         |        5          | 0  |  5  |
+P2       |        3         |        9          | 3  |  12 |
+P3       |        5         |        2          | 10 |  12 |
+P4       |        7         |        4          | 10 |  14 |
+
+- SJF
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        1         |        5          | 0  |  5  |
+P2       |        3         |        9          | 9  |  18 |
+P3       |        5         |        2          | 1  |  3  |
+P4       |        7         |        4          | 1  |  5  |
+
+- SRTN
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        1         |        5          | 0  |  5  |
+P2       |        3         |        9          | 9  |  18 |
+P3       |        5         |        2          | 1  |  3  |
+P4       |        7         |        4          | 1  |  5  |
+
+- RR
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        1         |        5          | 3  |  8  |
+P2       |        3         |        9          | 9  |  18 |
+P3       |        5         |        2          | 4  |  6  |
+P4       |        7         |        4          | 7  |  11 |
+
+Exercicio 3
+
+- FCFS
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |        6          | 0  |  6  |
+P2       |        2         |        3          | 4  |  7  |
+P3       |        4         |        5          | 5  |  10 |
+P4       |        5         |        2          | 9  |  11 |
+
+- SJF
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |        6          | 10 |  16 |
+P2       |        2         |        3          | 0  |  3  |
+P3       |        4         |        5          | 3  |  8  |
+P4       |        5         |        2          | 0  |  2  |
+
+- SRTN
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |        6          | 5  |  11 |
+P2       |        2         |        3          | 0  |  3  |
+P3       |        4         |        5          | 7  |  12 |
+P4       |        5         |        2          | 0  |  2  |
+
+- RR
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |        6          | 3  |  9  |
+P2       |        2         |        3          | 1  |  4  |
+P3       |        4         |        5          | 7  |  12 |
+P4       |        5         |        2          | 7  |  9  |
+
+Exercicio 4
+
+- FCFS
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |        8          | 0  |  8  |
+P2       |        1         |        5          | 7  |  12 |
+P3       |        3         |        2          | 10 |  12 |
+P4       |        4         |        4          | 11 |  15 |
+
+- SJF
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |        8          | 11 |  19 |
+P2       |        1         |        5          | 6  |  11 |
+P3       |        3         |        2          | 0  |  2  |
+P4       |        4         |        4          | 1  |  5  |
+
+- SRTN
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |        8          | 11 |  19 |
+P2       |        1         |        5          | 2  |  7  |
+P3       |        3         |        2          | 0  |  2  |
+P4       |        4         |        4          | 4  |  8  |
+
+- RR
+
+Processo | Tempo de chegada | Tempo de execução | WT | TAT |
+P1       |        0         |        8          | 10 |  18 |
+P2       |        1         |        5          | 10 |  15 |
+P3       |        3         |        2          | 3  |  5  |
+P4       |        4         |        4          | 11 |  15 |
